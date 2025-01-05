@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Fashion Store</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="assets/js/css/style.css">
+</head>
+<body>
+   <style>
+
+header {
+  height: 100x;
+  background-image: url('assets/img2.jpeg'); /* Pastikan path ini benar */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+header .content {
+  background-color: rgba(0, 0, 0, 0.5); /* Transparansi untuk teks */
+  padding: 100px;
+  border-radius: 30px;
+}
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: #5c6bc0;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: #283593;
+            margin: 10px 0;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .feedback-section {
+            margin-top: 50px;
+            background: #e8eaf6;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .feedback-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #283593;
+        }
+
+        .feedback-section textarea {
+            width: 80%;
+            max-width: 500px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .feedback-section button {
+            padding: 10px 30px;
+            background-color: #5c6bc0;
+            color: #fff;
+            font-size: 1rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .feedback-section button:hover {
+            background-color: #283593;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: #283593;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="layanan.html"><i class="fas fa-tshirt"></i> SHIRTSKI </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profil.html"><i class="fas fa-user"></i> Profil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="layanan.html"><i class="fas fa-cogs"></i> Layanan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeri.html"><i class="fas fa-images"></i> Galeri</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a>
+              </li>
+            </ul>
+            <a href="keranjang.html" class="btn nav-btn ms-3"><i class="fas fa-shopping-cart"></i> Belanja</a>
+          </div>
+        </div>
+      </nav>
+    
+
+      <header>
+        <div class="content">
+          <h1>Layanan Kami</h1>
+          <p>Kami Akan Melayani Anda Sepenuh Hati</p>
+          <a href="#masukan">Lihat Lebih banyak</a>
+        </div>
+      </header>
+
+<!-- Container -->
+<section class="masukan" id="masukan">
+<div class="container">
+    <!-- Layanan Section -->
+    <div class="services">
+        <div class="service-card">
+            <i class="fas fa-tshirt"></i>
+            <h3>Koleksi Gaun</h3>
+            <p>Koleksi gaun mewah untuk berbagai acara spesial Anda.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-user-friends"></i>
+            <h3>Personal Shopper</h3>
+            <p>Layanan konsultasi gaya untuk memilih pakaian terbaik.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-shipping-fast"></i>
+            <h3>Pengiriman Cepat</h3>
+            <p>Pengiriman produk yang cepat dan aman ke seluruh Indonesia.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h3>Garansi Produk</h3>
+            <p>Garansi kualitas untuk semua produk kami.</p>
+        </div>
+    </div>
+</section>
+    <!-- Feedback Section -->
+    <div class="feedback-section">
+        <h3>Beri Kami Masukan</h3>
+        <div class="feedback-image">
+            <a href="masukan.html">
+                <img src="assets/masukan.jpg" alt="Berikan Masukan" style="width: 300px; border-radius: 10px; cursor: pointer;">
+            </a>
+        </div>
+    </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <h2>Shirtski</h2>
+        <p>Gaya mewah untuk semua kesempatan. Nikmati belanja berkualitas tinggi bersama kami.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/rikiki199/profilecard/?igsh=MWNwcGFvNmtseWxuNg=="><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/rikiki199/profilecard/?igsh=MWNwcGFvNmtseWxuNg=="><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/rikiki199/profilecard/?igsh=MWNwcGFvNmtseWxuNg=="><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/rikiki199/profilecard/?igsh=MWNwcGFvNmtseWxuNg=="><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profil.html">Profil</a></li>
+          <li><a href="layanan.html">Tentang Kami</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h3>Newsletter</h3>
+        <p>Berlangganan untuk mendapatkan promo dan berita terbaru!</p>
+        <form action="langganan.html" method="POST">
+          <input type="email" placeholder="Masukkan email Anda" required>
+          <button type="submit">Berlangganan</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Shirtski. Semua Hak Cipta Dilindungi.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
