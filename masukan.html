@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masukan - Shirtski</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        select, textarea, input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group:last-child {
+            margin-bottom: 0;
+        }
+        footer {
+            background-color: hsl(253, 100%, 50%);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #ffc965;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Form Masukan</h1>
+        <form action="server/save-masukan.php" method="POST">
+            <div class="form-group">
+                <label for="kategori">Kategori Masukan:</label>
+                <select id="kategori" name="kategori" required>
+                    <option value="Produk">Produk</option>
+                    <option value="Pelayanan">Pelayanan</option>
+                    <option value="Website">Website</option>
+                    <!-- Tambahkan kategori lain jika perlu -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="1">1 - Sangat Buruk</option>
+                    <option value="2">2 - Buruk</option>
+                    <option value="3">3 - Cukup</option>
+                    <option value="4">4 - Baik</option>
+                    <option value="5">5 - Sangat Baik</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="isi_masukan">Isi Masukan:</label>
+                <textarea id="isi_masukan" name="isi_masukan" rows="4" required></textarea>
+            </div>
+
+            <input type="submit" value="Kirim Masukan">
+        </form>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Nama Perusahaan Anda. Semua Hak Dilindungi.</p>
+            <p><a href="privacy_policy.html">Kebijakan Privasi</a> | <a href="terms_of_service.html">Syarat dan Ketentuan</a></p>
+        </div>
+    </footer>
+</body>
+</html>

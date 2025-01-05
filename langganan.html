@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Langganan Toko Baju</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 40%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #00796b;
+        }
+
+        label {
+            font-size: 16px;
+            color: #00796b;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input[type="text"], input[type="email"], input[type="submit"] {
+            width: 95%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #00796b;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #004d40;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #00796b;
+        }
+
+        .footer a {
+            color: #004d40;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Langganan Toko Baju</h1>
+        <form action="server/save-langganan.php" method="POST">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <input type="submit" value="Daftar Langganan">
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Toko Baju. <a href="privacy_policy.html">Kebijakan Privasi</a> | <a href="terms_of_service.html">Syarat dan Ketentuan</a></p>
+    </div>
+</body>
+</html>
